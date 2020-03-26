@@ -5,14 +5,12 @@ namespace App\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Student extends Model
+class Subject extends Model
 {
+    //
     use SoftDeletes;
 
     protected $fillable = [
-        'card_number',
-        'name',
-        'email',
-        'password'
+        'subject_name'
     ];
 }
